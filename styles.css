@@ -518,6 +518,7 @@ button, a { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .app-panel { background: var(--paper-deep); }
 .app-layout { display: grid; grid-template-columns: 160px minmax(0,800px); gap: 40px; align-items: start; }
 .app-layout > div > p:not(.eyebrow) { max-width: 650px; color: var(--ink-soft); font-size: 1.05rem; }
+.app-link { margin-top: 28px; }
 .experience-panel { background: var(--paper); }
 .experience-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; align-items: center; }
 .experience-layout header > p:last-child { color: var(--ink-soft); }
