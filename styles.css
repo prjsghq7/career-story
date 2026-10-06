@@ -471,13 +471,14 @@ button, a { cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .journey-hero { background: radial-gradient(circle at 88% 18%, rgba(35,87,255,.13), transparent 28rem), var(--paper); }
 .hero-layout { display: grid; grid-template-columns: minmax(0,1.08fr) minmax(360px,.92fr); align-items: center; gap: 50px; }
 .journey-hero h1 { margin: 0; font: 700 clamp(4.8rem,11vw,9rem)/.82 var(--sans); letter-spacing: -.075em; }
-.system-map { position: relative; width: min(38vw, 520px); aspect-ratio: 1; margin-left: auto; }
+.system-map { position: relative; width: min(38vw, 520px); aspect-ratio: 1; margin-left: auto; cursor: default; user-select: none; -webkit-user-select: none; }
+.system-map * { cursor: default; }
 .map-orbit { position: absolute; border: 1px solid rgba(11,19,43,.14); border-radius: 50%; }
 .orbit-a { inset: 8%; border-style: dashed; }.orbit-b { inset: 23%; }
 .map-route { position: absolute; inset: 16%; border: 4px dashed var(--teal); border-radius: 48% 52% 46% 54%; opacity: .45; animation: map-spin 20s linear infinite; }
-.map-node,.map-result { position: absolute; display: grid; width: 82px; height: 82px; background: var(--white); border: 1px solid var(--line); border-radius: 50%; box-shadow: 0 16px 35px rgba(11,19,43,.12); place-items: center; font-size: .86rem; }
+.map-node,.map-result { position: absolute; display: grid; width: 82px; height: 82px; background: var(--white); border: 1px solid var(--line); border-radius: 50%; box-shadow: 0 16px 35px rgba(11,19,43,.12); place-items: center; font: 600 .82rem/1 var(--kr); letter-spacing: -.035em; }
 .node-q { left: 4%; bottom: 18%; }.node-v { top: 4%; left: 40%; }.node-c { top: 42%; right: 1%; }
-.map-result { right: 22%; bottom: 18%; width: 118px; height: 118px; color: var(--white); background: var(--forest); text-align: center; }
+.map-result { right: 22%; bottom: 18%; width: 118px; height: 118px; color: var(--white); background: var(--forest); font-size: .84rem; font-weight: 700; line-height: 1.38; text-align: center; }
 @keyframes map-spin { to { transform: rotate(360deg); } }
 
 .chapter-hardship { background: linear-gradient(135deg, rgba(255,77,61,.09), transparent 55%), var(--paper); }
